@@ -23,7 +23,8 @@ function showColorById(id){
     document.getElementById()
 }
 
-let lastClickedButton = null ;
+let lastClickedButton = null;
+
 function handleButtonClick(button){
     if(lastClickedButton){
         lastClickedButton.classList.remove('tia');

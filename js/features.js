@@ -15,11 +15,11 @@ closePopupBtn.addEventListener('click',function(){
 popupBox.classList.add('hidden');
 })
 
-window.addEventListener('click',function(event){
-    if(event.target===popupBox){
-    popupBox.classList.add('hidden');
-    }
-})
+// window.addEventListener('click',function(event){
+//     if(event.target===popupBox){
+//     popupBox.classList.add('hidden');
+//     }
+// });
 
 function showPopup(){
 popupBox.classList.remove('hidden');
