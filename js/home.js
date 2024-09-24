@@ -1,5 +1,6 @@
 document.getElementById('donate-noakhali-btn').addEventListener('click',function(){
     const donateMoney =getInputValueById('noakhali-donate-input');
+    
     const noakhaliTotal =getTextValueById('noakhali-total');
     const totalAmount =getTextValueById('total-amount');
     console.log(donateMoney,noakhaliTotal);
@@ -19,7 +20,9 @@ document.getElementById('donate-noakhali-btn').addEventListener('click',function
     }
 
 
+    
     const noakhaliDonation = donateMoney + noakhaliTotal;
+    document.getElementById('noakhali-donate-input').value = '';
     console.log(noakhaliDonation);
     const restAmount = totalAmount - donateMoney;
     console.log(restAmount);
@@ -47,13 +50,11 @@ document.getElementById('donate-noakhali-btn').addEventListener('click',function
     <p class="p-4"> Donation Time: ${formattedDateTime}`
     
     document.getElementById('history-text').appendChild(div); 
+
+    
     
 
 })
-
-// popup box 
- 
-
 
 
 // donate feni 
@@ -102,11 +103,13 @@ document.getElementById('donate-feni-btn').addEventListener('click',function(){
     <p class="p-4"> Donation Time: ${formattedDateTime}`
     
     document.getElementById('history-text').appendChild(div); 
+
+    document.getElementById('feni-donate-input').value = '';
     
 
 })
 
-// pop up box 
+//  donate quota 
 
 
 
@@ -157,6 +160,8 @@ document.getElementById('donate-quota-btn').addEventListener('click',function(){
     <p class="p-4"> Donation Time: ${formattedDateTime}`
     
     document.getElementById('history-text').appendChild(div); 
+
+    document.getElementById('quota-donate-input').value = '';
     
 
 })
